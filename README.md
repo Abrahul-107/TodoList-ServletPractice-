@@ -50,18 +50,8 @@ Java had no standard way to dynamically handle web requests until **Servlets** c
 ---
 
 ## 🏗️ Architecture Diagram
+![Todo List Screenshot](architecureImage/ServletArchitecture.png)
 
-```mermaid
-graph LR
-    A[Client (Browser)] -->|HTTP Request| B[Servlet Controller]
-    B --> C[Service Layer]
-    C --> D[Data Access Object (DAO)]
-    D --> C
-    C --> B
-    B -->|Forward to| E[JSP View]
-    E -->|HTML Response| A
-
-```
 
 ## 💡 Why Use Servlets?
 ### Feature	Benefit
