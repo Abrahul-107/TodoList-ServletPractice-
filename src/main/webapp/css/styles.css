@@ -1,0 +1,150 @@
+/* General body style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #5a9;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    background-color: #5a9;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+button:hover {
+    background-color: #478f6f;
+}
+
+/* Cancel link */
+a {
+    color: #5a9;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Task list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    background: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Buttons inside list items */
+li form {
+    margin: 0;
+}
+
+li button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+}
+
+/* Edit & Delete buttons different colors */
+li button[type="submit"]:hover {
+    background-color: #c94f4f;
+}
+
+li button[type="submit"][name="action"][value="edit"]:hover,
+li button[type="submit"][name="action"][value="save"]:hover {
+    background-color: #478f6f;
+}
+
+/* Make input in edit mode full width */
+li form input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    body {
+        margin: 20px 10px;
+    }
+    form {
+        flex-direction: column;
+        gap: 10px;
+    }
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    li button,
+    a {
+        margin-top: 8px;
+    }
+}
+/* Style for Edit button */
+.edit-btn {
+    background-color: #4a90e2; /* nice blue */
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    margin-right: 8px;
+}
+
+.edit-btn:hover {
+    background-color: #357ABD; /* darker blue on hover */
+}
+
+/* To keep the inline form neat */
+li form {
+    margin: 0;
+}

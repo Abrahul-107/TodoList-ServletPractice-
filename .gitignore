@@ -1,0 +1,52 @@
+# Ignore compiled class files
+*.class
+
+# Ignore build output directories (e.g., Maven, Gradle, or manual build dirs)
+target/
+build/
+out/
+
+# Ignore Eclipse IDE files
+.settings/
+.project
+.classpath
+
+# Ignore IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+
+# Ignore NetBeans IDE files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.swp
+
+# Ignore servlet container-specific files (like Tomcat)
+logs/
+work/
+temp/
+*.war
+
+*.vscode/
+# Ignore JAR files
+*.jar
+# Ignore Eclipse Jetty files
+jetty-logs/
+jetty-temp/
+
+# Ignore MacOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
